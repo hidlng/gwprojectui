@@ -1,0 +1,1195 @@
+/*---------------0. 공통-----------------*/
+.s_row {
+    display: table;
+    width: 100%;
+}
+
+.s_row > .s_employeeBtn {
+    padding: 4px 0 1px;
+}
+
+.s_float_right {
+    float: right !important;
+}
+
+.s_main_list {
+    position: absolute;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+.s_main_list.padding {
+    padding: 0 12px;
+    width: calc(100% - 24px);
+}
+.s_confirm_list {
+    
+}
+.s_confirm_list>.head {
+    font-size: 1.25em;
+    padding: 14px 0 5px;
+}
+.s_confirm_list>.sub {
+    padding: 3px 8px;
+}
+.s_confirm_list>.body {
+    min-height: 20px;
+    
+}
+.s_confirm_list>.body>span {
+    padding: 5px 0 0px 8px;
+    display: inline-block;
+}
+.s_line {
+    padding-top: 7px;
+    border-bottom: 1px dashed #969696;
+}
+
+.s_confirm2_title {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+
+.s_radio_btn {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px 8px;
+}
+.s_radio_btn>span {
+    display: table-cell;
+    background-color: #8e8e8e;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 11px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.s_radio_btn>span.active {
+	background-color: #545454;
+}
+
+/*---------------1. home화면----------------*/
+
+body, .s_wrap{
+    max-width: 800px;
+    margin: auto;
+}
+.s_header{
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+}
+
+.s_header>p{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 0;
+}
+
+.s_hederlogo{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.s_hederlogo>img{
+    width: 100px;
+    position: relative;
+    top: -5px;
+    padding-right: 10px;
+}
+
+.s_cont{
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 75px;
+    padding-bottom: 16%;
+}
+.s_contTitle{
+    background-color: #7c7c7c;
+    color: white;
+    padding: 6px;
+    font-size: 1.25em;
+    font-weight: 400
+}
+.s_topBox{
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+
+.s_leftBox, .s_rightBox{
+    width: 49%;
+    float: left;
+}
+.s_leftBox{
+    padding-left: 1%;
+}
+.s_rightBox{
+    float: right
+}
+
+.s_txtBox>h2{
+    font-size: 2em;
+    font-weight: 400;
+    color: #7c7c7c;
+    padding: 5px 0;
+}
+
+.s_txtBox>p{
+    font-size: 1.2em;
+    color: #7c7c7c;
+    font-weight: 500;
+    padding-bottom:8px;
+}
+
+.s_leftBox>p{
+    font-size: 1.5em;
+    background-color: #64819b;
+    margin-bottom: 6px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.s_rightBox table{
+    width: 100%;
+}
+.s_rightBox td img{
+    width: 40px;
+    padding-right: 5px
+}
+
+.s_rightBox td{
+    height: 50.5px;
+    border-bottom: 1px dashed #e7e7e7;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.s_rightBox tr:last-child td{
+    border: none;
+}
+.s_rightBox td:first-child{
+    color: #7c7c7c;
+}
+.s_rightBox td:last-child{
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 5px;
+    vertical-align: bottom
+}
+
+.s_middleBox{
+    overflow: hidden;
+    margin-top: 8px;
+}
+.s_middleBox>div{
+    width: 49%;
+    float: left;
+    border: 1px solid #bcbebf;
+    margin-bottom: 1%;
+    height: 0;
+    padding-bottom: 23%;
+}
+
+.s_middleBox>div:nth-child(2n){
+    float: right;
+}
+
+.s_middleTxt{
+    text-align: center;
+    
+}
+.s_middleTxt>img{
+    margin-top: 5%;
+    width:25%;
+    padding-bottom: 5%;
+}
+.s_middleTxt>p{
+    font-size: 1.25em;
+}
+.s_background p{
+    color: white;
+}
+.s_middleBox .s_background{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9e97d3+0,9e97d3+90,7472a5+90,7472a5+100 */
+    background: #9e97d3; /* Old browsers */
+    background: -moz-linear-gradient(top, #9e97d3 0%, #9e97d3 calc(100% - 2px), #7472a5 calc(100% - 32x), #7472a5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9e97d3 0%,#9e97d3 calc(100% - 2px),#7472a5 calc(100% - 2px),#7472a5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9e97d3 0%,#9e97d3 calc(100% - 2px),#7472a5 calc(100% - 2px),#7472a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e97d3', endColorstr='#7472a5',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #8b8aaf;
+}
+
+.s_bottomBox{
+    float: none;
+    overflow: hidden;
+}
+
+.s_bottomBox>div{
+    float: left;
+    border: 1px solid #bcbebf;
+    height: 0;
+    padding-bottom: 25%;
+    position: relative;
+    margin-bottom:1% 
+}
+
+.s_bottomBox>div:nth-child(2n){
+    float: right;
+}
+.s_bottomBig{
+    width: 64%
+}
+
+.s_bottomSmall{
+    width: 34%;
+}
+
+.s_bigTxt>span{
+    font-size: 1.25em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    text-align: center;
+}
+.s_bigTxt img{
+    width: 22%;
+    margin-left: 20px;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.s_bottomBox .s_background{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ea6759+0,ea6759+90,a54846+90,a54846+100 */
+    background: #ea6759; /* Old browsers */
+    background: -moz-linear-gradient(top, #ea6759 0%, #ea6759 calc(100% - 2px), #a54846 calc(100% - 2px), #a54846 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ea6759 0%,#ea6759 calc(100% - 2px),#a54846 calc(100% - 2px),#a54846 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ea6759 0%,#ea6759 calc(100% - 2px)#a54846 calc(100% - 2px),#a54846 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6759', endColorstr='#a54846',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #a75f5d;
+}
+
+.s_bottomBox .s_background span{
+    color: white;
+}
+
+.s_smallTxt{
+    text-align: center;
+}
+
+.s_smallTxt>img{
+    margin-top: 8%;
+    width:40%;
+    padding-bottom: 8%;
+}
+.s_smallTxt>p{
+    font-size: 1.25em
+}
+
+.s_footer{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    bottom: 0;
+    color: #c8c5c8;
+}
+
+.s_footer>div{
+    width: 20%;
+    height: 0;
+    padding-bottom: 16%;
+    float: left;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4b484b;
+    border-left: 1px solid #808080;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.s_menu1{
+    background-image: url(../img/down1.png);
+}
+.s_menu2{
+    background-image: url(../img/down2.png);
+}
+.s_menu3{
+    background-image: url(../img/down3.png);
+}
+.s_menu4{
+    background-image: url(../img/down4.png);
+}
+.s_menu5{
+    background-image: url(../img/down5.png);
+}
+
+.s_footer span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: 8px;
+}
+
+/*----------------------2. 취약개소관리--------------------------*/
+
+.s_subcont{
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 16%;
+}
+
+.s_subtitle{
+    background-color: #202528;
+    font-size: 1.5em;
+    color: white;
+    height: 45px;
+    position: relative;
+}
+.s_subtitle>img{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 30px);
+    transform: translateY(-50%) translateX(calc(-50% - 20px));
+    -webkit-transform: translateY(-50%) translateX(calc(-50% - 20px));
+}
+.s_subtitle>span{
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 20px);
+    transform: translateY(-50%) translateX(calc(-50%));
+    -webkit-transform: translateY(-50%) translateX(calc(-50%));
+}
+
+.s_roundBoxes{
+    margin: 5% auto;
+    width: calc(100% - 24px);
+}
+
+.s_roundBoxes>div{
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    height: 48px;
+    position: relative;
+}
+
+.s_roundBoxes>div img{
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+}
+.s_roundBoxes>div>p{
+    font-size: 1.25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.s_background_nfc {
+    background-color: #f8f8f8;
+}
+
+/*---------------------취약개소 세부 -------------------*/
+.sub_background{
+    background-color: #202528;
+    height: 100%;
+}
+
+.s_sub_header{
+    width: 100%;
+    height: 54px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    background-color: #202528;
+}
+.s_sub_header img{
+    width: 12px;
+    position: absolute;
+    padding-left: 2%;
+}
+
+
+.s_subheadTxt{
+    font-size: 1.5em;
+    color: white;
+}
+.s_padding{
+    width: 100%;
+    height: 50px;
+}
+.s_sub_paper{
+    width: 100%;
+    height: calc(100% - 50px);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.s_flippaper{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 40px;
+}
+.s_whitepaper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+}
+.s_sub_paper>img{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+
+.s_tableWrap{
+    position: absolute;
+    width: calc(100% - 30px);
+    top: 45px;
+    height: calc(100% - 46px);
+    overflow: auto;
+}
+
+.s_paper_table{
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.s_paper_table th, .s_paper_table td{
+    height: 30px;
+    padding: 0 8px;
+}
+.s_paper_table th {
+    font-size: 1.25em;
+}
+.s_paper_table td{
+    color: #646464;
+    border-bottom: 1px solid #c8c8c8;
+    
+}
+.s_paper_table th{
+    text-align: left;
+    padding-top: 5px;
+}
+
+.s_paper_table .s_option{
+    font-size: 1em;
+    text-align: right;
+}
+
+/*---------------- 취약개소 -----------------*/
+
+.s_subtitle>.s_dangerimg{
+    left: calc(50% - 10px);
+    transform: translateY(-50%) translateX(calc(-50% - 10px));
+    -webkit-transform: translateY(-50%) translateX(calc(-50% - 20px));
+}
+
+.s_sub_paper .s_smallBox>div{
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    height: 45px;
+    position: relative;
+}
+
+
+.s_weekBox{
+    margin-bottom: 2%;
+}
+
+
+
+
+/*----------------------근로자 안전관리-------------------------*/
+
+.s_subcont .s_smallBox>div{
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    height: 45px;
+    position: relative;
+}
+
+/*-------------근로자리스트--------------*/
+
+.s_serchBox{
+    overflow: hidden;
+}
+
+.s_serchBox>*{
+    float: left;
+}
+
+.s_serchBox>input{
+    width: 80%;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    font-size: 1.25em;
+    margin-bottom: 2%
+}
+.s_serchBox>.s_submit{
+    float: right;
+    width: 18%;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    position: relative;
+    background-color: white
+}
+.s_serchBox>.s_submit>span{
+    font-size: 1.25em;
+    font-weight: 600
+}
+
+
+.s_btnFooter{
+    width: 100%;
+    border-top: 1px solid #c8c8c8;
+    position: absolute;
+    height: 55px;
+    bottom: 0px;
+    background-color: white;
+}
+
+/*------------------- 근로자 교육관리------------------------*/
+
+.s_checkBox>input{
+    display: none;
+}
+.s_checkBox>label{
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.s_checkBox>label>span{
+    position: absolute;
+    left: -100%;
+    text-align: right;
+    top: 13px;
+}
+.s_checkBox>label:before{
+    content: "";  
+    display: inline-block;  
+    width: 40px;  
+    height: 40px;  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px;  
+    border-radius: 5px; 
+    border: 1px solid #c8c8c8;
+
+}
+
+.s_checkBox>input:checked + label:before{
+    background-image: url(../img/check_on.png);
+    background-position: center;
+    background-size: 40px;
+}
+
+
+.s_check_table{
+    width: 100%;
+}
+
+.s_check_table th, .s_check_table td{
+    font-size: 1.25em;
+    height: 30px;
+    padding: 0 8px;
+}
+
+.s_check_table td{
+    color: #646464;
+    font-weight: 700;
+    border-bottom: 1px solid #c8c8c8;
+    
+}
+.s_check_table th{
+    text-align: left;
+    padding-top: 5px;
+}
+
+.s_check_table .s_option {
+    text-align: right;
+}
+
+.s_underline{
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.s_btnWrap{
+    overflow: hidden;
+    right: 0;
+    
+}
+
+
+/*--------------------비콘배정관리----------------------*/
+
+
+/*----------- 셀렉트박스 이용한것 -------------*/
+/*
+.s_select{
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    background: url(../img/btn_dropdown-resize.png) no-repeat 98% 50%;
+    background-size: 10px;
+    
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 1.25em;
+}
+
+select.s_select::-ms-expand {
+    display: none; 
+}
+*/
+
+.s_bgGray{
+    background-color: #eeeeef;
+    box-shadow: 0px 5px #dbdcdc inset
+}
+
+.s_beaconBtn{
+    width: 80px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #2faee0; 
+    position: relative;
+}
+.s_beaconBtn>span{
+    color: white;
+    font-size: 1.25em;
+    padding-left: 18px
+}
+
+
+/*-------------------- 근로자 입사현황------------------------*/
+
+.s_margin1{
+    margin-bottom: 1%;
+}
+
+
+
+/*------------------- 05 현장공지 ------------------------*/
+
+.s_sub_pageTopfix{
+    width: 100%;
+    /*position: fixed;*/
+    top: 54px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #5a5a5a;
+    background: white;
+    z-index: 9999;
+}
+
+.s_subTcont{
+    width: calc(100% - 24px);
+    margin: auto;
+}
+
+.s_inputDummy{
+    width: 100%;
+    background: white;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 1%;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(../img/btn_dropdown-resize.png);
+    background-size: 12px;
+    background-repeat:no-repeat;
+    background-position: 95% 50%;
+}
+
+.s_inputDummy>span{
+    font-size: 1.25em;
+}
+
+.s_sub_pageBottomfix{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid #202528;
+}
+
+.s_employeeBtn{
+    float: right;
+    padding: 8px 0;
+}
+
+.s_employeeBtn>span {
+    background-color: #2f9dff;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    float: right;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.s_employeeBtn .btn_blue {
+    background-color: #1c81ff;
+}
+.s_employeeBtn img {
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: -8px;
+    margin-left: 2px;
+    width: auto;
+}
+
+/*------------------------반입전 장비 등록----------------------*/
+
+.s_infoTitle{
+    font-size: 1.5em;
+    padding: 12px 0 10px;
+}
+
+.s_infosubTitle{
+    display: block;
+    padding: 2px 0
+}
+
+/*----input-----*/
+.s_basicinfo input,
+.s_input {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+
+.s_selectWrap{
+    position: relative;
+    margin-bottom: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+.s_selectWrap li span{
+    font-size: 1.25em;
+}
+
+.s_selectWrap>li{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(../img/btn_dropdown-resize.png);
+    background-size: 12px;
+    background-repeat:no-repeat;
+    background-position: calc(100% - 10px) 48%;
+    border-radius: 5px;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    position: 9999;
+    background-color: white;
+}
+.s_selectWrap input {
+    text-align: center;
+    background: none;
+    border: 0;
+}
+
+.s_selectWrap li .s_company{
+    display: none;
+    position: absolute;
+    width: 90%;
+    line-height: 25px;
+    left: 5%;
+    top: 40px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
+    z-index: 9999;
+    border-collapse: collapse;
+}
+
+.s_selectWrap li.active .s_company {
+    display: table;
+    border-collapse: collapse;
+}
+
+.s_selectWrap li .s_company>li {
+    display: table-row;
+    height: 40px;
+    position: relative;
+    z-index: 9999;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+.s_selectWrap li .s_company>li:last-child {
+    border: 0;
+}
+
+.s_selectWrap li .s_company>li>span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.s_tool_sort1{
+    overflow: hidden;
+}
+
+.s_tool_sort1>input, .s_tool_sort1>span{
+    float: left;
+}
+
+.s_tool_sort1>input{
+    width: 65%;
+}
+
+.s_tool_sort1>div{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+}
+.s_tooltest,
+.s_insurance{
+    /*overflow: hidden;*/
+    display: table;
+    width: 100%;
+}
+
+
+.s_tooltest>div,
+.s_insurance>div{
+    width: 48%;
+    float: left;
+}
+.s_tooltest>div:last-child,
+.s_insurance>div:last-child{
+    float: right
+}
+
+.s_driverinput{
+    width: 100%;
+    background: white;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.s_driverinput>span{
+    font-size: 1.25em
+}
+
+.s_driverchange{
+    overflow: hidden
+}
+
+.s_driver .s_driverchange>div{
+    width: 49%;
+    float: left;
+}
+
+.s_driver .s_driverchange>div:last-child{
+    float: right;
+}
+
+.s_driver .s_driverchange>div>span{
+    text-align: center;
+}
+.s_tool_pic{
+    float: none;
+}
+
+.s_pic{
+    width: 100%;
+    background: white;
+    height: 0;
+    padding-bottom: 70%;
+    border-radius: 10px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.s_pic>img{
+    width: 100%;
+    
+}
+
+.s_saveBtn{
+    float: right;
+    padding-bottom: 2%;
+    padding-top: 2%
+}
+
+.s_saveBtn>span{
+    background-color: #1c81ff;
+    background-image: url(../img/btn_ok_resize.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 22px;
+    padding: 12px 0;
+    padding-right: 10px;
+    display: inline-block; 
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
+/*-----------------장비확인-------------------*/
+
+.s_confirmBtn{
+    width: 100%;
+    height: 50px;
+    background-color: #2faee0;
+    position: relative;
+    margin-top: 2%;
+}
+
+.s_confirmBtn{
+    font-size: 1.25em;
+    color: white;
+}
+
+/*-----------------장비 리스트---------------------*/
+
+.s_toolList{
+    width: 100%;
+    
+}
+.s_toolList td{
+    height: 50px;
+    border-bottom: 1px solid #c8c8c8;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- 모바일 사이즈 ---------------------*/
+
+@media(max-width: 425px){ 
+
+/*  -----------------1. home--------------------  */
+    .s_hederlogo{
+        font-size: 1.25em
+    }
+    .s_leftBox>p{
+        font-size: 1.25em;
+    }
+    .s_txtBox>p{
+        font-size: 1em;
+    }
+    .s_middleTxt>p, .s_smallTxt>p{
+        font-size: 1em;
+    }
+    
+    
+/*  --------------------02 취약개소--------------------  */
+    
+    .s_roundBoxes>div>p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    .s_subtitle, .s_subheadTxt{
+        font-size: 1.2em;
+    }
+    
+    .s_roundBoxes>div{
+        height: 45px;
+    }
+    
+    
+/* -------------근로자리스트----------------   */
+    .s_serchBox>input{
+        width: 75%;
+    }
+    .s_serchBox>.s_submit{
+        float: right;
+        width: 22%;
+        height: 40px;
+        border: 1px solid #c8c8c8;
+        border-radius: 5px;
+        position: relative;
+    }
+    .s_serchBox>.s_submit>span{
+        font-size: 1em;
+        font-weight: 600
+    }
+
+/*    ------------------근로자 교육관리--------------------*/
+
+
+/*  --------------비콘배정관리------------  */
+    .s_beaconBtn{
+        width: 65px;
+        height: 45px;
+    }
+    .s_beaconBtn>span{
+        font-size: 1em;
+    }
+    .s_select{
+        font-size: 1em;
+    }
+    .s_serchBox>.s_submit>span{
+        font-size: 1em;
+    }
+    
+/*    ---------------장비안전점검---------------- */
+    
+    .s_selectWrap li span, 
+    .s_inputDummy>span{
+        font-size: 1em
+    }
+    
+
+    
+    
+/*    --------------- 장비등록----------------------*/
+    .s_driverinput>span{
+        font-size: 1em
+    }
+    
+    .s_infoTitle{
+        font-size: 1.25em;
+    }
+    
+/*   -------------- 장비리스트----------------------- */
+    
+    .s_toolList td{
+        font-size: 1.2em;
+    }
+
+}
+
+
+
+
+
+
+
+/*//////////////////// 공통사항 /////////////////////*/
+.s_vCenter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.s_hCenter{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    
+}
+.s_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    -webkit-transform: translateY(-50%) translateX(-50%); 
+}
+
+.s_red{
+    color: #ff6174 !important;
+}
+.s_orange{
+    color: #ffa87a !important;
+}
+.s_blue{
+    color: #168df7  !important;
+}
+
+.s_undernone{
+    border-bottom: none !important;
+}
+
+.s_whiteBtn{
+    background-color: white !important;
+    border: 1px solid #c8c8c8;
+    color: black !important;
+}
+
+input{
+    outline: none;
+}
+
+select{
+    outline: none;
+}
+
+

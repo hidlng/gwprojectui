@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/smart.css">
+</head>
+
+<body>
+    <div class="s_wrap sub_background">
+        <header class="s_sub_header">
+            <img class="s_vCenter" src="img/ic_back.png" alt="">
+            <p class="s_subheadTxt s_center">부적합 보고서</p>
+        </header>
+        <!--    100%뻗을것    -->
+        <div class="s_padding"></div>
+        <div class="s_sub_paper">
+            <div class="s_whitepaper s_center">
+                <img class="s_flippaper" src="img/back_paper-resize.png" alt="">
+                <div class="s_tableWrap s_hCenter">
+                    <!--     //////// 1. 기본정보 ////////////          -->
+                    <div class="s_basicinfo">
+                        <h2 class="s_infoTitle">부적합 보고서 입력</h2>
+                        <p class="s_infosubTitle">협력업체</p>
+                        <ul class="s_selectWrap" tabindex="-1">
+                            <li>
+                                <span class="s_center">업체선택</span>
+                                <input type="hidden" value="">
+                                <ul class="s_company s_hCenter">
+                                    <li><span class="s_center">업체선택</span></li>
+                                    <li><span class="s_center">(주)유니썬코리아</span></li>
+                                    <li><span class="s_center">유니썬협력사</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="s_rent_company">
+                            <label class="s_infosubTitle" for="s_rentName">임대업체</label>
+                            <input type="text" id="s_rentName">
+                        </div>
+                        <div class="s_tool_sort1">
+                            <label class="s_infosubTitle" for="s_tool1">장비 분류 (대분류)</label>
+                            <input type="text" id="s_tool1">
+                            <div class="s_toolBtn"><span class="s_center">장비검색</span></div>
+                        </div>
+                        <div class="s_tool_sort2">
+                            <label class="s_infosubTitle" for="s_tool2">반입 장비 명 (소분류)</label>
+                            <input type="text" id="s_tool2">
+                        </div>
+                        <div class="s_toolNum">
+                            <label class="s_infosubTitle" for="s_toolNumber">장비 등록 번호</label>
+                            <input type="text" id="s_toolNumber">
+                        </div>
+                        <div class="s_toolSize">
+                            <label class="s_infosubTitle" for="s_toolSized">장비 실 규격</label>
+                            <input type="text" id="s_toolSized">
+                        </div>
+                    </div>
+                    <!--            ////// 2. 장비검사 ///////        -->
+                    <div class="s_tooltest">
+                        <h2 class="s_infoTitle">2.장비검사</h2>
+                        <div class="s_startDay">
+                            <p class="s_infosubTitle">시작일</p>
+                            <div class="s_inputDummy s_half">
+                                <span class="s_center">2017-04-06</span>
+                            </div>
+                        </div>
+                        <div class="s_endDay">
+                            <p class="s_infosubTitle">종료일</p>
+                            <div class="s_inputDummy s_half">
+                                <span class="s_center">2017-04-06</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--           /////// 3. 보험기간 ///////         -->
+                    <div class="s_insurance">
+                        <h2 class="s_infoTitle">3.보험기간</h2>
+                        <div class="s_startDay">
+                            <p class="s_infosubTitle">시작일</p>
+                            <div class="s_inputDummy s_half">
+                                <span class="s_center">2017-04-06</span>
+                            </div>
+                        </div>
+                        <div class="s_endDay">
+                            <p class="s_infosubTitle">종료일</p>
+                            <div class="s_inputDummy s_half">
+                                <span class="s_center">2017-04-06</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--           /////// 4. 장비운전원 ////// -->
+                    <div class="s_driver">
+                        <h2 class="s_infoTitle">4.장비운전원</h2>
+                        <div class="s_driverinput"><span class="s_center">운전원선택</span></div>
+
+                        <div class="s_driverName">
+                            <p class="s_infosubTitle">운전원 성명</p>
+                            <div class="s_driverinput"></div>
+                        </div>
+
+                        <div class="s_driverphone">
+                            <p class="s_infosubTitle">운전원 연락처</p>
+                            <div class="s_driverinput"></div>
+                        </div>
+
+                        <div class="s_driverlicense">
+                            <p class="s_infosubTitle">운전원 면허번호</p>
+                            <div class="s_driverinput"></div>
+                        </div>
+
+                        <div class="s_driverchange">
+                            <div class="s_driverinput"><span class="s_driverchangeBtn1 s_center">교대운전원 선택</span></div>
+                            <div class="s_driverinput"><span class="s_driverchangeBtn2 s_center">교대운전원 삭제</span></div>
+
+                        </div>
+                    </div>
+                    <!--            ////// 5.장비사진 //////        -->
+
+                    <div class="s_tool_pic">
+                        <h2 class="s_infoTitle">5.장비사진</h2>
+                        <div class="s_pic">
+                            <img src="img/noimage.png" alt="" class="s_vCenter">
+                        </div>
+                        <div class="s_driverinput"><span class="s_center">장비사진 선택</span></div>
+                    </div>
+                    <!--
+                    <footer class="s_btnFooter">
+                        <div class="s_blueBtn s_vCenter"><span class="s_vCenter">등록</span><span class="s_vCenter"><img src="img/btn_ok_resize.png" width="22px" alt=""></span></div>
+                    </footer>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="seongryeong.js"></script>
+</body>
+
+</html>
