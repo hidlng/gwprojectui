@@ -6,8 +6,11 @@ body,h1,h2,h3,h4,input,button{
 font-family:arial,Helvetica,AppleSDGothicNeo,sans-serif;
 font-size:14px;
 color:#444;}
-body{background-color:#fff;
-*word-break:break-all;-ms-word-break:break-all;}
+body{
+    background-color:#fff;
+    *word-break:break-all;
+    -ms-word-break:break-all;
+}
 img,fieldset,iframe{border:0 none;padding:0;}
 li{list-style:none}
 input,select,button{vertical-align:middle;}
