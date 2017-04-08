@@ -2,7 +2,7 @@
 html,body{width:100%;height:100%;}
 html{overflow-y:scroll;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button,input{margin:0;padding:0;}
-body,h1,h2,h3,h4,input,button{
+body,h1,h2,h3,h4,input,textarea,button{
 font-family:arial,Helvetica,AppleSDGothicNeo,sans-serif;
 font-size:14px;
 color:#444;}

@@ -28,20 +28,183 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="s_row">
                 <div class="s_tabs">
-                    <span class="active">관리자</span>
-                    <span>근로자</span>
+                    <span data-container="tab-01-managers" class="active">관리자</span>
+                    <span data-container="tab-02-workers">근로자</span>
                 </div>
                 <div class="s_employeeBtn">
                     <span>전체선택</span>
                 </div>
             </div>
-            <div>
-            
+        </div>
+        <div class="s_main_list" style="height: calc(100% - 226px);">
+            <div data-id="tab-01-managers" class="s_tabs_container active">
+                <table class="s_check_table">
+                    <!-- 관리자 -->
+                    <!--list 1-->
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="s_head_check">
+                                <div class="s_checkBox">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_1">
+                                    <label for="s_checkinput_1"></label>
+                                </div>
+                            </th>
+                            <th>문혜성</th>
+                            <th class="s_option s_red">출역전</th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_day_1">
+                                    <label for="s_checkinput_day_1">
+                                        <span>주</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_night_1">
+                                    <label for="s_checkinput_night_1">
+                                        <span>야</span>
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / B/HO8LC / 010-****-4347</td>
+                        </tr>
+                    </tbody>
+                    <!-- list 2 -->
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="s_head_check">
+                                <div class="s_checkBox">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_2">
+                                    <label for="s_checkinput_2"></label>
+                                </div>
+                            </th>
+                            <th>문혜성</th>
+                            <th class="s_option s_blue">출역후</th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_day_2">
+                                    <label for="s_checkinput_day_2">
+                                        <span>주</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_night_2" checked>
+                                    <label for="s_checkinput_night_2">
+                                        <span>야</span>
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / B/HO8LC / 1</td>
+                        </tr>
+                    </tbody>
+                    <!-- list end -->
+                </table>
+            </div>
+            <div data-id="tab-02-workers" class="s_tabs_container">
+                <table class="s_check_table">
+                    <!-- 관리자 -->
+                    <!--list 1-->
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="s_head_check">
+                                <div class="s_checkBox">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_1">
+                                    <label for="s_checkinput_1"></label>
+                                </div>
+                            </th>
+                            <th>문혜성</th>
+                            <th class="s_option s_red">출역전</th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_day_1" checked>
+                                    <label for="s_checkinput_day_1">
+                                        <span>주</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_night_1">
+                                    <label for="s_checkinput_night_1">
+                                        <span>야</span>
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">덤프 / 010-****-4347</td>
+                        </tr>
+                    </tbody>
+                    <!-- list 2 -->
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="s_head_check">
+                                <div class="s_checkBox">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_2">
+                                    <label for="s_checkinput_2"></label>
+                                </div>
+                            </th>
+                            <th>문혜성</th>
+                            <th class="s_option s_blue">출역후</th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_day_2">
+                                    <label for="s_checkinput_day_2">
+                                        <span>주</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th class="s_toggle" rowspan="2">
+                                <div class="s_checkBox s_type_btn">
+                                    <input type="checkbox" 
+                                           id="s_checkinput_night_2">
+                                    <label for="s_checkinput_night_2">
+                                        <span>야</span>
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">덤프2 / 010-****-7632</td>
+                        </tr>
+                    </tbody>
+                    <!-- list end -->
+                </table>
             </div>
         </div>
+        
+        <footer class="s_btnFooter">
+            <div class="s_employeeBtn" style="margin-right: 8px;">
+                <span>작업자추가</span>
+                <span>마감저장</span>
+                <span>임시저장</span>
+                <span>작업내용</span>
+            </div>
+        </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/9patch.min.js"></script>
+    <script src="js/seongryeong.js"></script>
 </body>
 
 </html>

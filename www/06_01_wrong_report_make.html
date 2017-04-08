@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/smart.css">
+</head>
+
+<body>
+    <div class="s_wrap sub_background">
+        <header class="s_sub_header">
+            <img class="s_vCenter" src="img/ic_back.png" alt="">
+            <p class="s_subheadTxt s_center">부적합 보고서</p>
+        </header>
+        <!--    100%뻗을것    -->
+        <div class="s_padding"></div>
+        <div class="s_sub_paper">
+            <div class="s_whitepaper s_center">
+                <img class="s_flippaper" src="img/back_paper-resize.png" alt="">
+                <div class="s_tableWrap s_hCenter">
+                    <div class="s_basicinfo">
+                        <h2 class="s_infoTitle">부적합 보고서 입력</h2>
+                        <p class="s_infosubTitle">협력업체</p>
+                        <ul class="s_selectWrap" tabindex="-1">
+                            <li>
+                                <input type="text" placeholder="업체 선택" readonly>
+                                <ul class="s_company">
+                                    <li value=""><span>업체선택</span></li>
+                                    <li value="(주)유니썬코리아"><span>(주)유니썬코리아</span></li>
+                                    <li value="유니썬협력사"><span>유니썬협력사</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            <label class="s_infosubTitle">조치할 위치</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label class="s_infosubTitle">조치권고자</label>
+                            <ul class="s_selectWrap" tabindex="-1">
+                                <li>
+                                    <input type="text" placeholder="업체 선택" value="점검권고자" readonly>
+                                    <ul class="s_company">
+                                        <li value="점검권고자"><span>점검권고자</span></li>
+                                        <li value="안전관리자"><span>안전관리자</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <label class="s_infosubTitle">조치예정일</label>
+                            <ul class="s_selectWrap" tabindex="-1">
+                                <li>
+                                    <input type="text" placeholder="조치 예정일 선택" readonly>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 빈도 강도 등급 -->
+                        <div class="s_row">
+                            <div style="width: 33.33%; float: left; padding-right: 3px;">
+                                <label class="s_infosubTitle">빈도</label>
+                                <ul class="s_selectWrap" tabindex="-1">
+                                    <li>
+                                        <input type="text" placeholder="빈도" value="1" readonly>
+                                        <ul class="s_company">
+                                            <li value="1"><span>1</span></li>
+                                            <li value="2"><span>2</span></li>
+                                            <li value="3"><span>3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="width: 33.33%; float: left; padding-right: 3px; padding-left: 3px;">
+                                <label class="s_infosubTitle">강도</label>
+                                <ul class="s_selectWrap" tabindex="-1">
+                                    <li>
+                                        <input type="text" placeholder="강도" value="1" readonly>
+                                        <ul class="s_company">
+                                            <li value="1"><span>1</span></li>
+                                            <li value="2"><span>2</span></li>
+                                            <li value="3"><span>3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="width: 33.33%; float: left; padding-left: 3px;">
+                                <label class="s_infosubTitle">등급</label>
+                                <input type="text" class="s_blue s_text_center" value="하">
+                            </div>
+                        </div>
+                        <!-- 빈도 강도 등급 END -->
+                        
+                        
+                        <div>
+                            <label class="s_infosubTitle">조치 권고 사진</label>
+                            <div class="s_profile_upload">
+                                <img src="img/noimage.png">
+                                <input type="file" accept="image/*">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="s_infosubTitle">조치 권고 내용</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="s_row" style="margin-bottom: 20px;">
+                            <div class="s_employeeBtn">
+                                <span class="btn_blue">등록 <img src="img/btn_ok_resize.png" width="22px" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/seongryeong.js"></script>
+</body>
+
+</html>

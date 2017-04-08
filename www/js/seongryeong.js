@@ -79,6 +79,25 @@
                 }
             }
         },
+        //tabs
+        tabs: {
+            click: function (e) {
+                var $tab = $(ffany.target(e)),
+                    data_id = $tab.data('container'),
+                    $containers = $('.s_tabs_container');
+                
+                if (data_id) {
+                    $tab.addClass('active').siblings().removeClass('active');
+                    
+                    $containers
+                        .filter('[data-id=' + data_id + ']')
+                        .addClass('active')
+                        .siblings()
+                        .removeClass('active');
+                }
+            }
+        },
+        
         //detect click target
         target: function (e) {
             var touch = e.touches && e.touches[0],
@@ -95,5 +114,7 @@
         //radio btn
         .on('click', '.s_radio_btn', ffany.radio_btn.click)
         //input file preview
-        .on('click', '.s_profile_upload', ffany.file_preview.click);
+        .on('click', '.s_profile_upload', ffany.file_preview.click)
+        //tabs
+        .on('click', '.s_tabs', ffany.tabs.click);
 }(window));
