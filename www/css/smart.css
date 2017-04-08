@@ -431,6 +431,7 @@ body, .s_wrap{
     width: 100%;
     bottom: 0;
     color: #c8c5c8;
+    font-size: 0.8em;
 }
 
 .s_footer>div{
@@ -562,6 +563,7 @@ body, .s_wrap{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    white-space: nowrap;
 }
 
 .s_background_nfc {
@@ -1000,6 +1002,7 @@ select.s_select::-ms-expand {
 }
 .s_employeeBtn .btn_blue {
     background-color: #1c81ff;
+    font-size: 1.1em;
 }
 .s_employeeBtn .btn_white {
     background-color: white;
@@ -1016,7 +1019,7 @@ select.s_select::-ms-expand {
     height: 21px;
     margin-top: -2px;
     margin-bottom: -2px;
-    margin-right: -8px;
+    margin-right: -4px;
     margin-left: 2px;
     width: auto;
 }
@@ -1333,7 +1336,7 @@ select.s_select::-ms-expand {
     
 }
 .s_toolList td{
-    height: 50px;
+    height: 55px;
     border-bottom: 1px solid #c8c8c8;
     font-size: 1.25em;
     font-weight: 600;
@@ -1448,10 +1451,6 @@ select.s_select::-ms-expand {
     }
     
 /*   -------------- 장비리스트----------------------- */
-    
-    .s_toolList td{
-        font-size: 1.2em;
-    }
 
 }
 
