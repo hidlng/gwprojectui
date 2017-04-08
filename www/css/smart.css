@@ -24,10 +24,16 @@
     -webkit-overflow-scrolling: touch;
     width: 100%;
 }
-.s_main_list.padding {
-    padding: 0 12px;
-    width: calc(100% - 24px);
+.s_main_list.padding,
+.s_padding_width {
+    padding-left: 12px;
+    padding-right: 12px;
+    /*width: calc(100% - 24px);*/
 }
+.s_padding_normal {
+    padding: 18px 12px;
+}
+
 .s_confirm_list {
     
 }
@@ -76,6 +82,13 @@
 }
 .s_radio_btn>span.active {
 	background-color: #545454;
+}
+
+.s_tabs {
+    float: left;
+}
+.s_tabs>span {
+
 }
 
 /*---------------1. home화면----------------*/
@@ -353,6 +366,38 @@ body, .s_wrap{
     bottom: 8px;
 }
 
+/*----------------------로그인 페이지-------------------------*/
+.s_login_back {
+    background-image: url(../img/login.png);
+    background-color: #edf4f4;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s_login_back {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+    padding: 20px 0;
+}
+/*.s_login_back:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}*/
+.s_login_form {
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    width: 75%;
+    top: 45%;
+}
+
 /*----------------------2. 취약개소관리--------------------------*/
 
 .s_subcont{
@@ -433,9 +478,9 @@ body, .s_wrap{
     background-color: #202528;
 }
 .s_sub_header img{
-    width: 12px;
+    width: 8px;
     position: absolute;
-    padding-left: 2%;
+    margin-left: 14px;
 }
 
 
@@ -819,7 +864,6 @@ select.s_select::-ms-expand {
 .s_btn {
     background-color: white;
     height: 40px;
-    border-radius: 4px;
     border: 1px solid #c8c8c8;
     margin-bottom: 7px;
     box-sizing: border-box;
@@ -830,15 +874,29 @@ select.s_select::-ms-expand {
 .s_btn.block {
     width: 100%;
 }
+.s_basicinfo input,
+.s_input {
+    border-radius: 4px;
+}
 .s_btn {
+    border-radius: 2px;
     display: table;
     vertical-align: middle;
     text-align: center;
+    cursor: pointer;
 }
 .s_btn>span {
     display: table-cell;
     vertical-align: middle;
 }
+.s_btn.gray {
+    background-color: #435c70;
+    border: 1px solid #435c70;
+    color: white;
+}
+
+
+
 /*select*/
 .s_selectWrap {
     position: relative;
@@ -1255,5 +1313,3 @@ input{
 select{
     outline: none;
 }
-
-
