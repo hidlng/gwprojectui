@@ -48,6 +48,18 @@
                 $target.addClass('active').siblings().removeClass();
             }
         },
+        //toggle btn
+        toggle_btn: {
+            click: function () {
+                var $this = $(this);
+                
+                if ($this.hasClass('active')) {
+                    $this.removeClass('active');
+                } else {
+                    $this.addClass('active');
+                }
+            }
+        },
         //input file img
         file_preview: {
             $img: null,
@@ -131,6 +143,8 @@
         .on('focusout', '.s_selectWrap', ffany.select_box.focusout)
         //radio btn
         .on('click', '.s_radio_btn', ffany.radio_btn.click)
+        //toggle btn
+        .on('click', '.s_toggle_btn', ffany.toggle_btn.click)
         //input file preview
         .on('click', '.s_profile_upload', ffany.file_preview.click)
         //tabs

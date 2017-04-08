@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/smart.css">
+</head>
+
+<body>
+    <div class="s_wrap sub_background">
+        <header class="s_sub_header">
+            <img class="s_vCenter" src="img/ic_back.png" alt="">
+            <p class="s_subheadTxt s_center">근로자 정보</p>
+        </header>
+        <!--    100%뻗을것    -->
+        <div class="s_padding"></div>
+        <div class="s_sub_paper">
+            <div class="s_whitepaper s_center">
+                <img class="s_flippaper" src="img/back_paper-resize.png" alt="">
+                <div class="s_tableWrap s_hCenter s_basicinfo">
+                    <!-- start -->
+                    <div>
+                        <label class="s_infosubTitle">업체변경</label>
+                        <ul class="s_selectWrap" tabindex="-1">
+                            <li>
+                                <input type="text" class="s_center" placeholder="업체 선택" readonly>
+                                <ul class="s_company">
+                                    <li value=""><span>업체 선택</span></li>
+                                    <li value="유니선코리아"><span>유니선코리아</span></li>
+                                    <li value="유니선협력업체"><span>유니선협력업체</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="s_infoTitle">근로자 정보</h2>
+                    <div>
+                        <label class="s_infosubTitle">성명</label>
+                        <input type="text" placeholder="성명" style="width: calc(100% - 110px);">
+                        <div style="float: right;">
+                            <div class="s_checkBox">
+                                <input type="checkbox" id="check_1">
+                                <label for="check_1">
+                                    <span>외국인</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">주민번호 ( 외국인번호 )</label>
+                        <input type="text" class="s_input"
+                               placeholder="8810151">
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">핸드폰</label>
+                        <input type="text" class="s_input"
+                               placeholder="ex)01012345678">
+                    </div>
+                    <div class="s_col_6">
+                        <label class="s_infosubTitle">여권번호</label>
+                        <input type="text" class="s_input">
+                    </div>
+                    <div class="s_col_6">
+                        <label class="s_infosubTitle">국적</label>
+                        <input type="text" class="s_input">
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">기초 교육기간</label>
+                        <ul class="s_selectWrap">
+                            <li>
+                                <input type="text" class="s_center" placeholder="기초교육기간 선택" readonly>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">직종</label>
+                        <ul class="s_selectWrap" tabindex="-1">
+                            <li>
+                                <input type="text" class="s_center" placeholder="직종 선택" readonly>
+                                <ul class="s_company">
+                                    <li value=""><span>직종 선택</span></li>
+                                    <li value="조경공"><span>조경공</span></li>
+                                    <li value="벌목공"><span>벌목공</span></li>
+                                    <li value="목공"><span>목공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                    <li value="철근공"><span>철근공</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">비신고, 신고 대상자</label>
+                        <ul class="s_selectWrap" tabindex="-1">
+                            <li>
+                                <input type="text" class="s_center" value="비신고" readonly>
+                                <ul class="s_company">
+                                    <li value="비신고"><span>비신고</span></li>
+                                    <li value="신고"><span>신고</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="s_caption s_red">* 비신고: 1년 이상 계약직, 정직원 / 신고: 1년이하(계약직, 일용직)</div>
+                    </div>
+                    <div>
+                        <label class="s_infosubTitle">근로자 특이사항</label>
+                        <textarea placeholder="메모"></textarea>
+                    </div>
+                    <div class="s_row" style="margin-bottom: 20px;">
+                        <div class="s_employeeBtn">
+                            <span class="btn_blue">저장 <img src="img/btn_ok_resize.png" width="22px" alt=""></span>
+                        </div>
+                    </div>
+                    <!-- list end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/9patch.min.js"></script>
+    <script src="js/seongryeong.js"></script>
+</body>
+
+</html>

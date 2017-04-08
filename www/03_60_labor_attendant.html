@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/smart.css">
+</head>
+
+<body>
+    <div class="s_wrap">
+        <header class="s_sub_header">
+            <img class="s_vCenter" src="img/ic_back.png" alt="">
+            <p class="s_subheadTxt s_center">근로자 출역관리</p>
+        </header>
+        <!--    100%뻗을것    -->
+        <div class="s_padding"></div>
+        <div class="s_padding_normal">
+            <div>
+                <ul class="s_selectWrap" tabindex="-1">
+                    <li>
+                        <input type="text" class="s_center" placeholder="시간 선택" readonly>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="s_selectWrap" tabindex="-1">
+                    <li>
+                        <input type="text" class="s_center" placeholder="업체 선택" readonly>
+                        <ul class="s_company">
+                            <li value=""><span>업체 선택</span></li>
+                            <li value="데브몬스터1"><span>데브몬스터1</span></li>
+                            <li value="데브몬스터2"><span>데브몬스터2</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="s_selectWrap" tabindex="-1">
+                    <li>
+                        <input type="text" class="s_center" value="전체" readonly>
+                        <ul class="s_company">
+                            <li value="전체"><span>전체</span></li>
+                            <li value="주간"><span>주간</span></li>
+                            <li value="야간"><span>야간</span></li>
+                            <li value="주간/야간"><span>주간/야간</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="s_row">
+                <div class="s_tabs">
+                    <span data-container="tab-01-managers" class="active">관리자</span>
+                    <span data-container="tab-02-workers">근로자</span>
+                </div>
+                <div class="s_employeeBtn">
+                    <span class="btn_white s_toggle_btn">장비</span>
+                    <span class="btn_white s_toggle_btn">인원</span>
+                </div>
+            </div>
+        </div>
+        <div class="s_main_list s_upperline" style="height: calc(100% - 303px);">
+            <div data-id="tab-01-managers" class="s_tabs_container active">
+                <table class="s_paper_table">
+                    <thead>
+                        <tr>
+                            <th>문혜성</th>
+                            <th class="s_option s_blue">등록</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / B/HO8LC / 1</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>문혜성2</th>
+                            <th class="s_option s_red">미등록</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / 용접공 / 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-id="tab-02-workers" class="s_tabs_container">
+                <table class="s_paper_table">
+                    <thead>
+                        <tr>
+                            <th>문혜성</th>
+                            <th class="s_option s_blue">등록</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / B/HO8LC / 010-****-4347</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>문혜성2</th>
+                            <th class="s_option s_red">미등록</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">(주)유니썬코리아 / 용접공 / 010-****-4347</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer class="s_textFooter">
+            <span>금역 출역자 누계 : 2명</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/9patch.min.js"></script>
+    <script src="js/seongryeong.js"></script>
+</body>
+
+</html>

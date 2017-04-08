@@ -188,7 +188,7 @@
 
 .s_pop_up .container .body {
     min-height: 100px;
-    padding: 12px;
+    padding: 12px 12px 0;
     text-align: left;
     margin-bottom: 55px;
 }
@@ -636,7 +636,6 @@ body, .s_wrap{
 
 .s_paper_table{
     width: 100%;
-    margin-bottom: 4px;
 }
 
 .s_paper_table th, .s_paper_table td{
@@ -645,6 +644,8 @@ body, .s_wrap{
 }
 .s_paper_table th {
     font-size: 1.25em;
+    text-align: left;
+    padding-top: 10px;
 }
 .s_paper_table td{
     color: #646464;
@@ -652,8 +653,7 @@ body, .s_wrap{
     
 }
 .s_paper_table th{
-    text-align: left;
-    padding-top: 5px;
+    
 }
 
 .s_paper_table .s_option{
@@ -728,13 +728,27 @@ body, .s_wrap{
 }
 
 
-.s_btnFooter{
+.s_btnFooter {
     width: 100%;
     border-top: 1px solid #c8c8c8;
     position: absolute;
     height: 55px;
     bottom: 0px;
     background-color: white;
+}
+.s_textFooter {
+    width: 100%;
+    border-top: 1px solid #c8c8c8;
+    position: absolute;
+    height: 35px;
+    bottom: 0px;
+    background-color: white;
+    display: table;
+}
+.s_textFooter>span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 12px;
 }
 
 /*------------------- 근로자 교육관리------------------------*/
@@ -974,7 +988,8 @@ select.s_select::-ms-expand {
 
 .s_employeeBtn>span {
     background-color: #2f9dff;
-    padding: 12px 10px;
+    border: 1px solid #2f9dff;
+    padding: 11px 10px;
     display: block;
     text-align: center;
     border-radius: 2px;
@@ -985,6 +1000,15 @@ select.s_select::-ms-expand {
 }
 .s_employeeBtn .btn_blue {
     background-color: #1c81ff;
+}
+.s_employeeBtn .btn_white {
+    background-color: white;
+    color: #434343;
+    border: 1px solid #c8c8c8;
+}
+.s_employeeBtn .btn_white.active {
+	background-color: #1c81ff;
+    color: white;
 }
 .s_employeeBtn img {
     display: inline-block;
