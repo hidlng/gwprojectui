@@ -97,6 +97,24 @@
                 }
             }
         },
+        //popup
+        popup: {
+            click: function (e) {
+                var $this = $(this),
+                    $target = $(ffany.target(e));
+                    
+                //팝업 클릭한게 아니거나 x를 클릭하면 꺼짐
+                if ((!$target.hasClass('container') && $target.closest('.container').length === 0)
+                        || ($target.hasClass('cancel') || $target.closest('.cancel').length !== 0)) {
+                    ffany.popup.close($this);
+                }
+            },
+            close: function ($this) {
+                $this.fadeOut('fast', function () {
+                    $this.remove();
+                });
+            }
+        },
         
         //detect click target
         target: function (e) {
@@ -116,5 +134,7 @@
         //input file preview
         .on('click', '.s_profile_upload', ffany.file_preview.click)
         //tabs
-        .on('click', '.s_tabs', ffany.tabs.click);
+        .on('click', '.s_tabs', ffany.tabs.click)
+        //popup
+        .on('click', '.s_pop_up', ffany.popup.click);
 }(window));

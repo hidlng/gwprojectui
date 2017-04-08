@@ -13,6 +13,29 @@
 .s_row > .s_employeeBtn {
     padding: 4px 0 1px;
 }
+.s_col_6,
+.s_col_adden {
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.s_col_6:first-child,
+.s_col_adden:first-child {
+    padding-left: 0;
+}
+.s_col_6:last-child,
+.s_col_adden:last-child {
+    padding-right: 0;
+}
+.s_col_6 {
+    width: 50%;
+}
+.s_col_adden {
+    width: calc(100% - 85px) !important;
+}
+.s_col_adden + .s_col_adden {
+	width: 85px !important;
+}
 
 .s_float_right {
     float: right !important;
@@ -109,6 +132,69 @@
 .s_text_center {
     text-align: center;
 }
+
+
+/*---------------팝업----------------*/
+
+.s_pop_up {
+    background-color:  rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+}
+.s_pop_up:before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+.s_pop_up .container {
+    background-color: white;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.s_pop_up .container .head {
+	display: table;
+    width: 100%;
+}
+.s_pop_up .container .head>span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 12px;
+    border-bottom: 1px solid #2f9dff;
+}
+.s_pop_up .container .head>.title {
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.s_pop_up .container .head>.cancel {
+    text-align: right;
+}
+.s_pop_up .container .head>.cancel>img {
+    display: inline-block;
+    width: 12px;
+}
+
+.s_pop_up .container .body {
+    min-height: 100px;
+    padding: 12px;
+    text-align: left;
+    margin-bottom: 55px;
+}
+
+
+
 
 /*---------------1. home화면----------------*/
 
@@ -751,11 +837,18 @@ body, .s_wrap{
 .s_check_table th[rowspan="2"]{
     padding-bottom: 7px !important;
 }
+.s_check_table th>.sub {
+    font-size: 0.8em;
+    top: -2px;
+    position: relative;
+}
 
 .s_check_table .s_option {
     text-align: right;
     font-size: 1em;
     padding-right: 12px;
+    position: relative;
+    top: 2px;
 }
 .s_check_table .s_toggle {
     padding: 0 4px 0 0;
@@ -876,12 +969,12 @@ select.s_select::-ms-expand {
 
 .s_employeeBtn{
     float: right;
-    padding: 8px 0;
+    padding: 7px 0;
 }
 
 .s_employeeBtn>span {
     background-color: #2f9dff;
-    padding: 12px 16px;
+    padding: 12px 10px;
     display: block;
     text-align: center;
     border-radius: 2px;
@@ -902,6 +995,14 @@ select.s_select::-ms-expand {
     margin-right: -8px;
     margin-left: 2px;
     width: auto;
+}
+/*버튼 애드온*/
+.s_employeeBtn.s_inline {
+    float: left;
+    padding: 0 0 7px 0;
+}
+.s_employeeBtn.s_inline > span {
+    margin: 0;
 }
 
 /*------------------------반입전 장비 등록----------------------*/
@@ -947,7 +1048,7 @@ select.s_select::-ms-expand {
 }
 .s_basicinfo textarea {
     resize: none;
-    height: 80px;
+    height: 100px;
     padding-top: 8px;
 }
 .s_btn {
