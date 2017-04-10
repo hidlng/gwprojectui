@@ -193,8 +193,100 @@
     margin-bottom: 55px;
 }
 
-
-
+/*---------캘린더----------*/
+.back-calendar-pop{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 460px;
+    top: calc(50% - 230px);
+    left: calc(50% - 160px);
+}
+.calendar-top-group{
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+.calendar-title{
+    font-family: 'Key Font';
+    padding-bottom: 25px;
+}
+.calendar-left,
+.calendar-right{
+    width: 12%;
+    height: 22px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    color: #ff6174/*keyColor*/;
+}
+.calendar-select{
+    width: 38%;
+    height: 22px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.calendar-input{
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    font-size: 0.8em;
+    background: url(../img/icons/ic_dropdown.png) ,white;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 2px) center;
+    background-size: 12px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+}
+.calendar-body-group{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    table-layout: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.calendar-body-group td:first-child{
+    color: #ff6d6d;
+}
+.calendar-body-group td{
+    height: 40px;
+}
+.calendar-body-group td>span{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    padding-top: 9px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.calendar-body-group td.active>span{ 
+    color: white;
+    background-color: #ff6174/*keyColor*/;
+    border-radius: 30px;
+}
+.calendar-btn-bottom{
+    position: absolute;
+    bottom: 2px;
+    height: 45px/*btnHeight*/;
+    width: calc(50% - 2px);
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+}
+.calendar-btn-bottom.left{
+    left: 2px;
+    background-color: white;
+    color: #ff6174;
+    border: 1px solid #ff6174;
+}
+.calendar-btn-bottom.right{
+    right: 2px;
+    background-color: #ff6174;
+}
 
 /*---------------1. home화면----------------*/
 
