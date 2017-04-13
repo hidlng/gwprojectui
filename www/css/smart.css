@@ -288,10 +288,6 @@
     right: 2px;
     background-color: #ff6174;
 }
-=======
-
-
->>>>>>> commit
 
 /*---------------1. home화면----------------*/
 
@@ -1009,14 +1005,10 @@ select.s_select::-ms-expand {
 }
 */
 
-<<<<<<< HEAD
 .s_bgGray{
     background-color: #eeeeef;
     box-shadow: 0px 5px #dbdcdc inset
 }
-=======
-
->>>>>>> commit
 
 .s_beaconBtn{
     width: 80px;
@@ -1446,23 +1438,10 @@ select.s_select::-ms-expand {
 
 
 
-<<<<<<< HEAD
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-=======
 /*/////////////////// 추가페이지//////////////////////*/
 
 /*///////////취약개소관리///////////*/
@@ -1637,6 +1616,7 @@ select.s_select::-ms-expand {
     position: static;
     height: auto;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 
@@ -1974,14 +1954,35 @@ select.s_select::-ms-expand {
     float: right;
     cursor: pointer;
 }
->>>>>>> commit
+
+
+/*------------------ 근로자 안전관리-----------------------*/
+
+.s_roundBoxes .s_big_safeBox>.s_staffbox{
+    float: left;
+}
+
+.s_bigCircle{
+    width: 50%;
+}
+
+
+.s_newstaff, .s_foreignstaff{
+    width: 25%;
+}
+
+.s_staffCircle>img{
+    position: static;
+}
+
+
+
+
 
 /*-------------------- 모바일 사이즈 ---------------------*/
 
 @media(max-width: 425px){ 
-<<<<<<< HEAD
-=======
-    
+
 /* ////////////추가사항 ////////////////   */
     
     .s_roundBoxes .s_big_roundBoxIn{
@@ -2020,7 +2021,6 @@ select.s_select::-ms-expand {
     
     
 /*/////////////////추가사항 끝///////////////////   */
->>>>>>> commit
 
 /*  -----------------1. home--------------------  */
     .s_hederlogo{
@@ -2111,9 +2111,7 @@ select.s_select::-ms-expand {
 
 }
 
-<<<<<<< HEAD
 
-=======
 @media(max-width: 321px){ 
     .s_roundBoxes .s_big_roundBoxIn {
         width: 80%;
@@ -2132,7 +2130,7 @@ select.s_select::-ms-expand {
 
     
 }
->>>>>>> commit
+
 
 
 
@@ -2171,13 +2169,11 @@ select.s_select::-ms-expand {
     color: #168df7  !important;
 }
 
-<<<<<<< HEAD
-=======
 .s_bgGray{
     background-color: #eeeeef !important;
     box-shadow: 0px 5px #dbdcdc inset
 }
->>>>>>> commit
+
 .s_undernone{
     border-bottom: none !important;
 }
@@ -2191,3 +2187,31 @@ select.s_select::-ms-expand {
 input, textarea, select {
     outline: none;
 }
+
+
+.s_active:active{
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0px 1px rgba(0,0,0,0.2) inset
+}
+
+.s_activeViolet:active{
+    background: #8583b8;
+}
+
+.s_activeMint:active{
+    background: #2ca2a3;
+        
+             
+}
+
+
+
+
+
+
+
+
+
+
+
+
