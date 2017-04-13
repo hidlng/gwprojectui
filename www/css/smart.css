@@ -132,6 +132,9 @@
 .s_text_center {
     text-align: center;
 }
+.s_background_gray {
+    background-color: #e6e6e6;
+}
 
 
 /*---------------팝업----------------*/
@@ -1467,14 +1470,37 @@ select.s_select::-ms-expand {
     -webkit-transform: translateY(-50%) translateX(-50%);
     /* background-color: antiquewhite; */
     background-image: url(../img/bg_bar.png);
-    background-size: 50%;
+    background-size: 15% 80px;
     background-repeat: no-repeat;
-    background-position: 50% 10%;
+    background-position: center center;
+    display: table;
+    width: 100%;
 }
 
-.s_roundBoxes .s_big_roundBox p{
-    position: static;
-     transform: none;
+.s_roundBoxes .s_big_roundBox .s_top,
+.s_roundBoxes .s_big_roundBox .s_bottom {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.s_roundBoxes .s_big_roundBox .s_top {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.s_roundBoxes .s_big_roundBox .s_bottom {
+
+}
+.s_roundBoxes .s_big_roundBox .s_left {
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #5c5cd0;
+}
+.s_roundBoxes .s_big_roundBox .s_right {
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #60af31;
 }
 
 .s_roundBoxes .s_big_roundBox .s_rightTxt{
@@ -2040,11 +2066,6 @@ select.s_select::-ms-expand {
 
 /* ////////////추가사항 ////////////////   */
     
-    .s_roundBoxes .s_big_roundBoxIn{
-        width: 65%;
-        height: 50%;
-    }
-    
     .s_report_img>span{
         font-size: 2.2em;
     }
@@ -2168,10 +2189,6 @@ select.s_select::-ms-expand {
 
 
 @media(max-width: 321px){ 
-    .s_roundBoxes .s_big_roundBoxIn {
-        width: 80%;
-        height: 45%;
-    }
     
     .s_report_img .s_greenone,
     .s_report_img .s_yellowone,
