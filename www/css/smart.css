@@ -193,6 +193,7 @@
     margin-bottom: 55px;
 }
 
+<<<<<<< HEAD
 /*---------캘린더----------*/
 .back-calendar-pop{
     background-color: rgba(255, 255, 255, 0.9);
@@ -1441,7 +1442,587 @@ select.s_select::-ms-expand {
 
 
 
+/*/////////////////// 추가페이지//////////////////////*/
 
+/*///////////취약개소관리///////////*/
+
+.s_newMargin{
+    margin: 2% auto;
+}
+
+
+.s_roundBoxes .s_big_roundBox{
+    height: 150px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.s_roundBoxes .s_big_roundBoxIn{
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    /* background-color: antiquewhite; */
+    background-image: url(../img/bg_bar.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+}
+
+.s_roundBoxes .s_big_roundBox p{
+    position: static;
+     transform: none;
+}
+
+.s_roundBoxes .s_big_roundBox .s_rightTxt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.s_roundBoxes .s_smallBoxes{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform:  translateX(-50%);
+    -webkit-transform: translateX(-50%);
+   
+}
+
+
+.s_menu2.s_noticeImg{
+    background-image: url(../img/down6.png);
+}
+
+.s_subtitle .s_leftArrow{
+    width: 8px;
+    position: absolute;
+    left: 40px;
+}
+
+
+/*------------------부적합보고서--------------------*/
+
+.s_roundBoxes .s_big_worngBox{
+    height: 0;
+    padding-bottom: 40%;
+    margin-bottom: 15px;
+}
+
+.s_roundBoxes .s_calBox{
+    position: relative;
+}
+
+.s_roundBoxes .s_calBox p{
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.2em;
+/*    background-color: antiquewhite;*/
+    border-bottom: 1px solid #c8c8c8; 
+    
+}
+
+
+.s_roundBoxes .s_calBox p>img{
+    position: absolute;
+    width: 10px;
+    transform: none;
+}
+.s_roundBoxes .s_calBox p>.s_imgLeft{
+/*    background-color: aqua;*/
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.s_roundBoxes .s_calBox p>.s_imgRight{
+/*    background-color: aqua;*/
+    left: calc(98% - 10px);
+    /* right: 2%; */
+    transform: translateY(-50%);   
+}
+
+.s_reportBox{
+    padding: 5% 5%;
+    overflow: hidden;
+}
+
+.s_roundBoxes .s_reportBox>div{
+    width: 33.3%;
+    float: left;
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+}
+
+
+.s_report_img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+    
+}
+
+.s_report_img .s_greenone,
+.s_report_img .s_yellowone,
+.s_report_img .s_redone{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%); 
+    -webkit-transform:translateX(-50%);
+    border-bottom: 1px solid #c8c8c8; 
+    padding-bottom: 8%;
+    
+}
+
+.s_report_img>span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    font-size: 5em;
+}
+
+
+.s_report1 span{
+    color: #35a095
+}
+
+.s_report2 span{
+    color: #e8aa0f
+}
+
+.s_report3 span{
+    color: #b53144;
+}
+
+.s_reportBox p{
+    text-align: center; 
+    padding-top: 16%;
+}
+
+
+/*///////////////안전운동//////////////*/
+
+
+.s_roundBoxes .s_big_safeBox{
+    position: static;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+
+.s_roundBoxes .s_greenlignt img{
+    width: 18px;
+    position: static;
+    transform: none;
+}
+
+.s_roundBoxes .s_greenlignt{
+    width: 100%;
+}
+
+.s_roundBoxes .s_greenlignt td{
+    text-align: center;
+    padding: 2px 0;
+    border-bottom:  1px solid #c8c8c8; 
+    border-right: 1px solid #c8c8c8; 
+}
+
+.s_roundBoxes .s_greenlignt tr:last-child td,
+.s_roundBoxes .s_greenlignt tr:first-child td:first-child{
+    border-bottom:none;
+}
+
+
+.s_roundBoxes .s_greenlignt th{
+    padding: 10px 0;
+    border-bottom:  1px solid #c8c8c8; 
+    border-right: 1px solid #c8c8c8; 
+    background-color: #acd6e5;
+}
+
+.s_roundBoxes .s_greenlignt th:last-child{
+    border-right:none;
+}
+
+
+
+/*////////////강원본부 맵/////////////*/
+
+.s_kangwonMap{
+    height: 0;
+    padding-bottom: 80%;
+    border-bottom:  1px solid #c8c8c8;
+    box-sizing: border-box;
+}
+.s_kangwonFooter{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2%
+}
+
+.s_kangwonFooter>div{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    height: 0;
+    padding-bottom: 20%;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.s_kangwonFooter .s_kangwonmenu3,
+.s_kangwonFooter .s_kangwonmenu6{
+    margin-right: 0;
+}
+.s_kangwonmenu4{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9e97d3+0,9e97d3+90,7472a5+90,7472a5+100 */
+    background: #9e97d3; /* Old browsers */
+    background: -moz-linear-gradient(top, #9e97d3 0%, #9e97d3 calc(100% - 2px), #7472a5 calc(100% - 32x), #7472a5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9e97d3 0%,#9e97d3 calc(100% - 2px),#7472a5 calc(100% - 2px),#7472a5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9e97d3 0%,#9e97d3 calc(100% - 2px),#7472a5 calc(100% - 2px),#7472a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e97d3', endColorstr='#7472a5',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #8b8aaf;
+    color: white;
+}
+
+.s_kangwonmenu6{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9e97d3+0,9e97d3+90,7472a5+90,7472a5+100 */
+    background: #2fb5b6; /* Old browsers */
+    background: -moz-linear-gradient(top, #2fb5b6 0%, #2fb5b6 calc(100% - 2px), #398d7e calc(100% - 32x), #398d7e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2fb5b6 0%, #2fb5b6 calc(100% - 2px),#398d7e calc(100% - 2px),#398d7e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2fb5b6 0%,#2fb5b6 calc(100% - 2px),#398d7e calc(100% - 2px),#398d7e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fb5b6', endColorstr='#2fb5b6',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #398d7e;
+    color: white;
+}
+
+
+
+/*-------------------- 점검결과확인-----------------------*/
+
+.s_newTitle{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.29em;
+    background-color: #8e7b6a;
+    color: white;
+}
+.s_new_pageTopfix{
+    padding: 2%;
+    position: relative;
+    height: 0;
+    padding-bottom: 42%;
+    border-bottom:  2px solid #c8c8c8;
+}
+.s_newImg{
+    width: 60%;
+    height: 0;
+    padding-bottom: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+     border: 1px solid #c8c8c8;
+}
+
+
+.s_newImg>img{
+    width: 100%;
+    
+}
+
+.s_new_pageMiddle>table{
+    width: 100%;
+}
+
+.s_new_pageMiddle>table td{
+    padding: 5px 0;
+    border-bottom:  1px solid #c8c8c8;
+}
+
+.s_new_pageMiddle>table td:first-child{
+    padding-left: 3%;
+}
+
+.s_new_pageMiddle>table td:last-child{
+    text-align: right;
+    padding-right: 3%;
+}
+
+.s_new_pageMiddle>table td:last-child img{
+    width: 40px
+}
+
+
+
+/*--------------- 재난관리 -----------------*/
+
+
+.s_newCont{
+    padding:0;
+}
+
+.s_newCont .s_subtitle .s_disasterImg{
+    width: 22px
+}
+
+.s_disasterCont{
+    padding: 5%;
+}
+
+.s_disasterCont>p{
+    text-align: center;
+    color: #ff0000;
+    font-size: 1.29em;
+    font-weight: 600;
+    padding: 2%;
+}
+.s_disasterCont .s_disImg>img{
+    width: 60%;
+}
+
+.s_disasterBoxes{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.s_disasterBoxes>div{
+    width: 49%;
+    float: left;
+    border-radius: 10px;
+    background: #2c4153;
+    height: 0;
+    padding-bottom: 49%;
+}
+
+.s_disasterBoxes>.s_disBox2{
+    float: right;
+}
+
+.s_disasterBoxes>div>img{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+.s_disasterBoxes>div>p{
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.29em;
+}
+
+.s_disFooter{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3%;
+}
+.s_disFooter>div{
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+.s_disFooter>div>img{
+    width: 100%
+}
+
+.s_disFooter>div>span{
+    color: white;
+    font-size: 1.29em;
+    
+}
+
+.s_foot3>span{
+    text-align: right;
+}
+
+
+
+/*--------------------사용전 등록-----------------------*/
+
+.s_newTitle.s_newSky{
+    background-color: #2ea8d6;
+}
+
+.s_new_pageTopfix.s_no_line{
+    border: none;
+    padding-bottom: 62%;
+}
+
+.s_newImg.s_square{
+    padding-bottom: 60%;
+    border: 1px solid #c8c8c8;
+}
+
+.s_new_pageMiddle>.s_no_line{
+    margin-top: 3%;
+}
+
+.s_new_pageMiddle>.s_no_line th{
+    text-align: left;
+    padding-left: 3%;
+    color: blue;
+    font-size: 1.2em;
+}
+.s_new_pageMiddle>.s_no_line td{
+    border: none;
+    text-align: left !important;
+}
+
+
+.s_newFooerBtn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.s_newFooerBtn>p{
+    width: 33.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.s_newFooerBtn>.s_newBtn1{
+    background-color: #2ea8d6;
+}
+
+.s_newFooerBtn>.s_newBtn2{
+    background: #444;
+}
+
+.s_newFooerBtn>.s_newBtn3{
+    background: #ffc502;
+}
+.s_newFooerBtn>p>span{
+    display: inline-block;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.29em;
+    
+}
+
+/*------------------ 사유 팝업-----------------------*/
+
+.s_newPicBtn{
+    float: left;
+    padding: 7px 0;
+}
+
+.s_newPicBtn>span {
+    background-color: #999;
+    border: 1px solid #999;
+    padding: 11px 20px;
+    padding-left: 30px;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    float: right;
+    margin-left: 8px;
+    cursor: pointer;
+    background-image: url(../img/new/ic_camera.9-resize.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px;
+}
+
+.s_employeeBtn.s_newemployeeBtn{
+    float: right;
+    padding: 7px 0;
+}
+
+.s_employeeBtn.s_newemployeeBtn>span {
+    background-color: #2f9dff;
+    border: 1px solid #2f9dff;
+    padding: 11px 25px;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+
+/*------------------ 근로자 안전관리-----------------------*/
+
+.s_roundBoxes .s_big_safeBox>.s_staffbox{
+    float: left;
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.s_roundBoxes .s_big_safeBox.s_staffsafeBox{
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.s_bigCircle{
+    width: 50%;
+}
+
+
+.s_newstaff, .s_foreignstaff{
+    width: 25%;
+}
+
+.s_roundBoxes .s_staffbox img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    -webkit-transform: translateY(-50%) translateX(-50%); 
+}
+
+.s_newstaff>p, .s_foreignstaff>p{
+    text-align: center;
+    padding-top: 40%
+}
+
+.s_staffCircle>span,
+.s_foreignCircle>span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    -webkit-transform: translateY(-50%) translateX(-50%); 
+}
+
+.s_bigCircle p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    color: white;
+    z-index: 999
+}
+
+
+.s_bigCircle .s_allstaff{
+    top:20%;
+}
+.s_bigCircle .s_allstaffNum{
+        bottom: 28%;
+    font-size: 0.8em;
+}
+
+.s_bigCircle .s_allstaffNum>span{
+    font-size: 1.6em
+}
 
 
 
@@ -1456,6 +2037,45 @@ select.s_select::-ms-expand {
 /*-------------------- 모바일 사이즈 ---------------------*/
 
 @media(max-width: 425px){ 
+
+/* ////////////추가사항 ////////////////   */
+    
+    .s_roundBoxes .s_big_roundBoxIn{
+        width: 65%;
+        height: 50%;
+    }
+    
+    .s_report_img>span{
+        font-size: 2.2em;
+    }
+
+    .s_reportBox{
+        padding: 2% 5%;
+        overflow: hidden;
+    }
+    
+    .s_roundBoxes .s_calBox p {
+        padding: 5px 0;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .s_disasterBoxes>div>p{
+        color: white;
+        font-size: 1em;
+    }
+
+    .s_disFooter>div>span{
+        color: white;
+        font-size: 1em;
+
+    }
+
+
+    
+    
+    
+/*/////////////////추가사항 끝///////////////////   */
 
 /*  -----------------1. home--------------------  */
     .s_hederlogo{
@@ -1547,6 +2167,25 @@ select.s_select::-ms-expand {
 }
 
 
+@media(max-width: 321px){ 
+    .s_roundBoxes .s_big_roundBoxIn {
+        width: 80%;
+        height: 45%;
+    }
+    
+    .s_report_img .s_greenone,
+    .s_report_img .s_yellowone,
+    .s_report_img .s_redone{
+        padding-bottom:5%;
+    }
+    .s_reportBox p {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    
+}
+
 
 
 
@@ -1585,6 +2224,11 @@ select.s_select::-ms-expand {
     color: #168df7  !important;
 }
 
+.s_bgGray{
+    background-color: #eeeeef !important;
+    box-shadow: 0px 5px #dbdcdc inset
+}
+
 .s_undernone{
     border-bottom: none !important;
 }
@@ -1598,3 +2242,34 @@ select.s_select::-ms-expand {
 input, textarea, select {
     outline: none;
 }
+
+
+
+/*-----------------버튼 클릭시------------------------*/
+
+.s_active:active{
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0px 1px rgba(0,0,0,0.2) inset
+}
+
+.s_activeViolet:active{
+    background: #8583b8;
+}
+
+.s_activeMint:active{
+    background: #2ca2a3;
+        
+             
+}
+
+
+
+
+
+
+
+
+
+
+
+
