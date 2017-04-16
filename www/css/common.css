@@ -24,7 +24,7 @@ button *{position:relative;}
 button img{left:-3px;*left:auto;}
 html:first-child select{height:20px;padding-right:6px;}
 option{padding-right:6px;}
-hr{display:none;}
+hr {box-sizing: content-box;height: 0;overflow: visible; border: 0; border-bottom: 1px solid #e8e8e8; margin: 0; margin-bottom: 14px; margin-top: 14px; border-bottom: 1px dashed #c3c3c3;}
 legend{*width:0;}
 table{border-collapse:collapse;border-spacing:0;}
 header,footer,nav,section,aside{
