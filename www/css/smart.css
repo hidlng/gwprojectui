@@ -14,7 +14,8 @@
     padding: 4px 0 1px;
 }
 .s_col_6,
-.s_col_adden {
+.s_col_adden,
+.s_col_pre{
     float: left;
     padding-left: 3px;
     padding-right: 3px;
@@ -34,7 +35,13 @@
     width: calc(100% - 85px) !important;
 }
 .s_col_adden + .s_col_adden {
-	width: 85px !important;
+		width: 85px !important;
+}
+.s_col_pre {
+		width: 85px !important;
+}
+.s_col_pre + .s_col_pre {
+    width: calc(100% - 85px) !important;
 }
 
 .s_float_right {
@@ -147,18 +154,25 @@
     line-height: 1em;
 }
 
+.s_title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.25em;
+	border-top: 1px solid #eee;
+	padding: 7px;
+}
 
 /*---------------팝업----------------*/
 
 .s_pop_up {
-    background-color:  rgba(0, 0, 0, 0.12);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: auto;
+		background-color:  rgba(0, 0, 0, 0.12);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		overflow: auto;
 }
 .s_pop_up:before {
     content: "";
@@ -1233,6 +1247,9 @@ select.s_select::-ms-expand {
 .s_btn>span {
     display: table-cell;
     vertical-align: middle;
+}
+.s_btn img {
+  width: 17px;
 }
 .s_btn.gray {
     background-color: #435c70;
@@ -2428,6 +2445,111 @@ input, textarea, select {
 .s_picture_row p {
     text-align: center;
     font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.s_work_report_item {
+	background-color: white;
+	border: 1px solid #d4d4d4;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.s_work_report_item .s_work_report_list>table,
+.s_work_report_item .s_work_report_reply>table{
+	width: 100%;
+}
+.s_work_report_list {
+	padding: 10px;
+}
+.s_work_report_list>table {}
+.s_work_report_list .yellow_chip {
+	vertical-align: top;
+	font-weight: bold;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	font-size: 1.25em;
+}
+.s_work_report_list .yellow_chip>span{
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-color: #fdbb30;
+	padding-top: 2px;
+}
+.s_work_report_list .header {
+	padding-left: 7px;
+}
+.s_work_report_list .title {
+	font-weight: bold;
+	font-size: 1.25em;
+	display: inline-block;
+	padding: 2px 0 1px;
+}
+.s_work_report_list .sub {
+	color: #9b9b9b;
+}
+.s_work_report_list .right {
+	text-align: right;
+	width: 85px;
+	vertical-align: top;
+}
+.s_work_report_list .yellow_chip2 {
+background-color: #fdbb30;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 7px;
+}
+.s_work_report_list .work_title {
+	color: #2f9dff;
+	font-weight: bold;
+	vertical-align: top;
+	font-size: 1.25em;
+	padding-top: 18px;
+}
+.s_work_report_list .work_title + .work_contents {
+	padding-top: 16px;
+}
+.s_work_report_list .work_no_title + work_contents {
+	padding-top: 7px;
+}
+
+.s_work_report_reply .reply_add {
+	text-align: right;
+	color: #9b9b9b;
+	padding: 7px 10px;
+}
+.s_work_report_reply .reply td {
+	border-top: 1px solid #c4c4c4;
+	padding: 1px 3px;
+}
+.s_work_report_reply .reply td:first-child {
+	border-right: 1px solid #c4c4c4;
+}
+.s_work_report_reply .reply td:last-child {
+	padding: 5px;
+}
+.s_work_report_reply .reply .new {
+	background-color: #a8a8a8;
+}
+.s_work_report_reply .s_col_adden {
+	padding-left: 0;
+	padding-right: 3px;
+}
+.s_work_report_reply .s_col_adden + .s_col_adden {
+	padding-left: 0;
+	padding-right: 0;
+}
+.s_work_report_reply .s_input,
+.s_work_report_reply .s_btn {
+	margin: 0;
 }
 
 /*-----------------버튼 클릭시------------------------*/

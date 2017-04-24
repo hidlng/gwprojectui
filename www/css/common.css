@@ -6,6 +6,12 @@ body,h1,h2,h3,h4,input,textarea,button{
 font-family:arial,Helvetica,AppleSDGothicNeo,sans-serif;
 font-size:14px;
 color:#444;}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
 body{
     background-color:#fff;
     *word-break:break-all;
